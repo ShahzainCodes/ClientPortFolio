@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: url("../assets/Fonts/GeneralSans-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.text-slider {
+  height: 30vh;
+}
+.text-slider {
+  padding: 5rem 0rem;
+}
+.text-slider-cont h1 {
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  color: black;
+  font-weight: 600;
+  font-family: "GeneralSans-Regular";
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 991px) {
+  .text-slider-cont h1 {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-slider-cont h1 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .text-slider-cont h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+.text-slider-cont:hover h1 {
+  color: #fff;
+  cursor: pointer;
+}

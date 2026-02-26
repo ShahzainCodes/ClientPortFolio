@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../assets/Fonts/GeneralSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.nav-tags {
+  font-family: "GeneralSans";
+}
+.nav-tags a {
+  letter-spacing: 2px;
+  font-size: 13px;
+  position: relative;
+  padding: 0 6px;
+}
+
+.nav-tags a::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 0.3s;
+}
+.nav-tags a:hover::after {
+  width: 110%;
+}
+
+nav .logo {
+  padding-left: 10px;
+}
+.show-mobile-nav {
+  display: block;
+  background-color: rgb(215, 127, 105);
+  background-image: radial-gradient(
+    circle farthest-corner at 0% 100%,
+    #d77f69,
+    #d2b1a0 29%,
+    #aea1aa 63%,
+    #72747f
+  );
+}
+.mobile-nav {
+  display: none;
+}
+.menu-nav-btn {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-tags {
+    display: none;
+  }
+  .menu-nav-btn {
+    display: block;
+  }
+}
